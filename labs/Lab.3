@@ -1,0 +1,16 @@
+function getIP{
+    (get-netipaddress).ipv4address | select-string "169*"      
+}
+function gethost{
+    (get-host).NAme |Select-String "Name"
+}
+
+$IP = getIP
+$USER = $env:USERNAME
+$PS = $HOST.Version.Major
+$HOSTNAME = hostname
+$Date = Get-Date -Format "dddd MM/dd/yyy HH:mm K"
+
+Write-Host("This machine's IP is {0}. " -f $IP)("User is $USER.")("Hostname is $HOSTNAME.")("Powershell version is $PS.")("Today's date is $DATE.")
+
+$BODY("This machine's IP is: $IP. The user is $USER. Hostname is $HOSTNAME. Powershell version is $PS. Today's date is $DAY, $MONTH $DAY $YEAR")
