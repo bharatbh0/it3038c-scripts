@@ -1,6 +1,8 @@
 //Uploading pre-made HTML files 
+//This is done use Node 
+//Create a file.js and add the code below for a pre-made html template
 
-{
+> {
   entry: 'index.js',
   output: {
     path: __dirname + '/dist',
