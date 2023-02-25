@@ -2,16 +2,15 @@
 //This is done use Node 
 //Create a file.js and add the code below for a pre-made html template
 
-> {
-  entry: 'index.js',
+> const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
+  entry: 'filename.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'index_bundle.js'
+    filename: 'filename.js'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'My App',
-      filename: 'assets/admin.html'
-    })
+    new HtmlWebpackPlugin()
   ]
 }
