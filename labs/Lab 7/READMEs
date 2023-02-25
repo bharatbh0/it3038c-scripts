@@ -1,0 +1,50 @@
+Lab 7 - ReadME
+
+Installation of the plugin 
+> npm i --save-dev html-webpack-plugin
+ 
+//After the installation is finished there is no configuration to do. 
+//There are also other plugins to add with this in order to enchance the type of html file you create. 
+//You can find many in html-webpack-plugin hooks by searching it up.
+
+//Create a example.js node file and add the code 
+//The code for your example.js 
+
+> const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
+  entry: 'filename.js',
+  output: {
+    path: __dirname + '/dist',
+    filename: 'filename.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ]
+}
+
+//This will create a basic html file named filename.html in a directory named /dist. Or any other directory you have.
+
+//If you have multiple files add another: new HtmlWebpackPlugin({ })
+//Example:
+
+> ... //Same code as above 
+  plugins: [
+    new HtmlWebpackPlugin() //Looks at the output
+   //Addition for multiple files below
+    new HtmlWebpackPlugin({ filename: 'newfile', template: 'directory/diectory/newfile.html' }) //Easy way to create a new file wihtout output 
+  ]
+}
+
+
+//Adding other plugins in your code 
+
+> ... //Same code 
+  plugins: [
+   new HtmlWebpackPlugin({
+     title: 'Custom template', //You can choose many other formats for <'Custom Template'> from github html-webpack-plugin/docs/template-option.md
+     template: 'index.html'
+  })
+]
+   
+   //You might need to install other plugins for the custom template to work properly 
