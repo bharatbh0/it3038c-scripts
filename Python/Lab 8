@@ -1,0 +1,15 @@
+from bs4 import BeautifulSoup
+import requests, re
+
+r = requests.get('https://www.newegg.com/p/N82E16824012040?Item=N82E16824012040').content
+soup= BeautifulSoup(r, 'html.parser')
+
+span = soup.find("h1", {"class" : "product-title"})
+title = span.text
+
+span = soup.find("span", {"class" : "price-current"} )
+price = soup.find('strong').string
+
+print("Item %s has price %s" % (title, price))
+
+
