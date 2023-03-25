@@ -1,5 +1,5 @@
 const http = require("http");
-const data = require("/workspaces/codespaces-blank/widgets.json");
+const data = require("/it-3038/widgets.json");
 
 const server = http.createServer((req, res) => {
     if (req.url === "/") {
@@ -12,5 +12,5 @@ const server = http.createServer((req, res) => {
     }
   });
 
-  server.listen(3000);
-  console.log("Server is listening on port 3000");
+  server.listen(3433);
+  console.log("Server is listening on port 3433");
