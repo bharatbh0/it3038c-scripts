@@ -1,0 +1,38 @@
+Copy and paste the code in your codespace and type : python3 cal.py
+
+Once you have it running choose one of the inout from (1-5):
+   #print("Calculator ")
+   #print("1 for Addition")
+   #print("2 for Subtraction")
+   #print("3 for Multiplication")
+   #print("4 for Division")
+   #print("5 for Exponentiation")
+   
+Once you chose (1-5) next is choosing your first number than your second:
+#Enter your First choice: ..
+#Enter your Second choice: ..
+
+You should be able to see the full display of choice 1 and 2 and your answer below it.
+#4 / 4
+#Answer is: 1
+
+After you have the choice of continuing for asking a different question.
+
+I used a while loop since it makes it easy for a loop to continue so that the user can keep inputting new calculations.
+#while True:
+  ....choice=input("Enter.....")
+  ....
+  ....
+  
+ #else:
+        #print("Invalded Choice: Try again") #This is when your number can't be found or you typed a letter.
+        
+    #a = input("continue? (Y/N): ") #This is after you have gotten the answer and if you want ask another question or quit.
+    #if a == "Y":
+        #choice() #If Y go back to choice=input("Enter....")
+    #elif a == "N":
+        #print("Shutting down...") #If N than quit
+        #break
+    #else:
+        #print("Invalied input") #Anything other than Y or N print invalied and quit
+       #break
