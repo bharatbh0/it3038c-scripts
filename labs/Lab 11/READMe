@@ -1,0 +1,12 @@
+You need to activate flask in order for it to work:
+
+# Windows:
+py -3 -m venv venv
+venv\Scripts\activate.ps1
+
+# Unix:
+python3 -m venv venv
+. venv/bin/activate
+
+#install: 
+pip install flask
