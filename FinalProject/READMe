@@ -16,7 +16,7 @@ Now you need to activate the flask
  Once your done create file named calculator.py
   $vi calculator.py
  
- Then make a folder named templates 
+ Then make a folder named templates ##
    $mkdir templates
    //cd into templates and create 
     $vi calculate.html
@@ -27,4 +27,14 @@ Now you need to activate the flask
     
  Codespace will show the link to a webpage but for alma type 
  http://127.0.0.1:5000 to view the calculator in firefox
+ 
+ ##IMPORTANT##
+ If you get cannot find file calculator.py it's mostly likey that your files are insync 
+ it should look something like this
+ 
+ -Flask
+  -cal.py
+  - (folder/template)
+    -(file1.html)
+    -(file2.html)
   
