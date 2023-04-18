@@ -5,9 +5,26 @@ First step:
 
 Create a virtualenv: 
   $virstualenv flask  
-  $cd flask
-  //now you need to activate the flask
+  $cd flask 
+  
+Now you need to activate the flask
   $source bin/activate
-  //(flask) showed show up left of your commands
+  
+(flask) should show up left of your commands then
   $pip3 install flask 
+  
+ Once your done create file named calculator.py
+  $vi calculator.py
+ 
+ Then make a folder named templates 
+   $mkdir templates
+   //cd into templates and create 
+    $vi calculate.html
+    $vi result.html
+     
+ Once you have everything done start it up
+    $python3 calculator.py
+    
+ Codespace will show the link to a webpage but for alma type 
+ http://127.0.0.1:5000 to view the calculator in firefox
   
