@@ -1,0 +1,13 @@
+Using Python, Flask and html to make a Calculator. 
+Works on Codespace and Alma 
+
+First step:
+
+Create a virtualenv: 
+  $virstualenv flask  
+  $cd flask
+  //now you need to activate the flask
+  $source bin/activate
+  //(flask) showed show up left of your commands
+  $pip3 install flask 
+  
