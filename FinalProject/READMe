@@ -33,7 +33,7 @@ Now you need to activate the flask
  it should look something like this
  
  -Flask
-  -cal.py
+  - cal.py
   - (folder/template)
     -(file1.html)
     -(file2.html)
