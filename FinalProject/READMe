@@ -13,6 +13,9 @@ Now you need to activate the flask
 (flask) should show up left of your commands then
   $pip3 install flask 
   
+
+Second Step:
+
  Once your done create file named calculator.py
   $vi calculator.py
  
